@@ -1,0 +1,148 @@
+html,body{
+margin:0;
+padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Nunito', sans-serif;
+    background-color:#F0F0F0;
+    color:#1A004E;
+}
+
+ul{
+    padding: 0 1em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 300px;
+}
+ul li a{
+  text-decoration: none;
+   
+}
+
+span{
+    color:#797979;
+    font-weight: bold;
+}
+
+main{
+    background: white;
+    padding:1em;
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h2{
+    font-size:1.3rem;
+    position:relative;
+    margin-bottom: 1.5em;
+}
+
+h2:before{
+    content: "";
+    position: absolute;
+    height:5px;
+    width:40px;
+    background: #8040FF;
+    left:0;
+    bottom:-7px;
+    border-radius: 1em;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.2em;
+    border: 1px solid #ACACAC;
+    color: #1B1820;
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: 3px solid #ACACAC;
+}
+
+.wrapper{
+    padding:0.5em;
+    text-align: center;
+}
+.circle{
+    width: 3em;
+    height: 3em;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto .5em;
+    display: grid;
+    place-content: center;
+    color: #797979;
+    font-weight: bold;
+}
+
+.current .circle{
+    background: #1A004E;
+    color:white
+}
+
+.current span{
+   color:#1A004E 
+}
+
+.cta{
+    display: block;
+    width: 100%;
+    padding:1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #8040FF;
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: .2em;
+}
+
+.right-col{
+    margin-top: 2em;
+    line-height: 1.5em;
+    color: #1B1820;
+}
+
+@media(min-width:650px){
+    main{display: flex;
+        padding:2em;
+    }
+    .left-col{
+        flex:0 0 65%;
+        margin-right:2em;
+    }
+    .right-col{
+        margin-top: 0;
+    }
+    .cta{
+        display: inline-block;
+        width: unset;
+        padding: 1em 4em;
+    }
+}
+
+@media(min-width:950px){
+    main{
+        padding:2em;
+        width:900px;
+        margin:2em auto;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+}
